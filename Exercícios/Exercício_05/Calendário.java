@@ -21,12 +21,12 @@ public class TelaRelogio extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        Calendar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cursoemvideo/images.png"))); // NOI18N
+        Calendar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cursoemvideo/images.png"))); 
 
-        Title.setFont(new java.awt.Font("Segoe UI", 3, 24)); // NOI18N
+        Title.setFont(new java.awt.Font("Segoe UI", 3, 24)); 
         Title.setText("Data e Hora Atuais");
 
-        btnClick.setFont(new java.awt.Font("Segoe UI", 3, 14)); // NOI18N
+        btnClick.setFont(new java.awt.Font("Segoe UI", 3, 14)); 
         btnClick.setText("Clique Aqui!");
         btnClick.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -34,7 +34,7 @@ public class TelaRelogio extends javax.swing.JFrame {
             }
         });
 
-        Visor.setFont(new java.awt.Font("Segoe UI", 3, 18)); // NOI18N
+        Visor.setFont(new java.awt.Font("Segoe UI", 3, 18)); 
         Visor.setForeground(new java.awt.Color(153, 153, 153));
         Visor.setText("Clique no botão!");
 
@@ -74,7 +74,7 @@ public class TelaRelogio extends javax.swing.JFrame {
         pack();
     }
 
-    private void btnClickActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnClickActionPerformed
+    private void btnClickActionPerformed(java.awt.event.ActionEvent evt) {
         Date relogio = new Date();
         Visor.setText(relogio.toString());
     }
